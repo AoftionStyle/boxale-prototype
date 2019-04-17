@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contract</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- bootstrap-css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- //bootstrap-css -->
+    
+</head>
+<body>
+
+<div class="container">
+<div class="form-group form-inline"></div>
+<h2 style="text-align: center">กำหนดราคา Supplier</h2>
+<br>
+    <div class="col-5" style="margin-left: 30%">
+        <div class="form-group form-inline">
+            <label class="col-4">รหัสsupplier</label>
+            <input class="form-control col-4" value="110">
+            <label class="col-4">บรรทุกทอง</label>
+        </div>
+        <div class="form-group form-inline">
+            <input type="submit" class="btn btn-primary mx-auto" value="แสดงราคาขาย">
+            <input type="button" class="btn btn-primary mx-auto" data-toggle="modal" data-target="#myModal" value="เพิ่มสัญญา">
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="col-10" style="margin-left: 10%">
+    <table class="table">
+    <thead>
+        <tr>
+        <th>รหัสสาขา</th>
+        <th>ชื่อสาขา</th>
+        <th>ประเภท</th>
+        <th>ราคา</th>
+        <th>วันที่มีผลเริ่มต้น</th>
+        <th>วันที่มีผลสิ้นสุด</th>
+        <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>10110</td>
+        <td>สีลม</td>
+        <td>ลังกระดาษ</td>
+        <td>23</td>
+        <td>01/01/2562</td>
+        <td>01/12/2562</td>
+        <td><input type="button" class="btn btn-danger" value="ลบ"></td>
+        </tr>
+        <tr>
+        <td>10111</td>
+        <td>สาทร</td>
+        <td>ลังพลาสติก</td>
+        <td>43</td>
+        <td>01/01/2562</td>
+        <td>01/12/2562</td>
+        <td><input type="button" class="btn btn-danger" value="ลบ"></td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+</div>
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    
+        <!-- Modal Header -->
+        <div class="modal-header">
+        <h4 class="modal-title">เพิ่มสัญญา</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="form-group form-inline">
+                <label class="col-4">รหัสsupplier</label>
+                <input class="form-control col-4" value="110" readonly>
+                <label class="col-4">บรรทุกทอง</label>
+            </div>
+            <div class="form-group form-inline">
+                <label class="col-4">รหัสสาขา</label>
+                <input class="form-control col-4" value="10231">
+                <label class="col-4">สวนลุมพินี</label>
+            </div>
+            <div class="form-group form-inline">
+                <label class="col-4">วันที่เริ่มต้น</label>
+                <input class="form-control col-4" value="01/03/2019">
+            </div>
+            <div class="form-group form-inline">
+                <label class="col-4">วันที่สิ้นสุด</label>
+                <input class="form-control col-4" value="01/03/2019">
+            </div>
+            <div class="form-group form-inline">
+                <label class="col-4">ประเภทสินค้า</label>
+                <select class="form-control col-7" id="sel1">
+                    <option>ลังกระดาษ</option>
+                    <option>ขวด</option>
+                </select>
+            </div>
+            <div class="form-group form-inline">
+                <label class="col-4">ราคา/กิโลกรัม</label>
+                <input class="form-control col-4" value="0.00">
+            </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+        <button type="button" class="btn btn-success mx-auto" data-dismiss="modal">บันทึก</button>
+        </div>
+        
+    </div>
+    </div>
+</div>
+
+
+</body>
+</html>

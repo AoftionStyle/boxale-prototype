@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Category</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- bootstrap-css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- //bootstrap-css -->
+    
+</head>
+<body>
+
+<div class="container">
+    <div class="form-group form-inline"></div>
+    <h2 style="text-align: center">จัดการประเภทสินค้า</h2>
+    <br>
+    <div class="col-5" style="margin-left: 30%">
+    <form action="/action_page.php">
+        <div class="form-group form-inline">
+            <input type="submit" class="btn btn-primary mx-auto" value="แสดงประเภทสินค้า">
+            <input type="button" class="btn btn-primary mx-auto" data-toggle="modal" data-target="#myModal" value="เพิ่มประเภทสินค้า">
+        </div>
+    </form>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="col-6" style="margin-left: 28%">
+    <table class="table">
+    <thead>
+        <tr>
+        <th>รหัสประเภทสินค้า</th>
+        <th>ประเภทสินค้า</th>
+        <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>01</td>
+        <td>ลังกระดาษ</td>
+        <td><input type="button" class="btn btn-danger" value="ลบ"></td>
+        </tr>
+        <tr>
+        <td>02</td>
+        <td>ลังพลาสติก</td>
+        <td><input type="button" class="btn btn-danger" value="ลบ"></td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+</div>
+
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    
+        <!-- Modal Header -->
+        <div class="modal-header">
+        <h4 class="modal-title">เพิ่มประเภทสินค้า</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="form-group form-inline">
+                <label class="col-4">ชื่อประเภทสินค้า</label>
+                <input class="form-control col-6" value="ขวด">
+            </div>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+        <input type="button" class="btn btn-success mx-auto" data-dismiss="modal" value="บันทึก">
+        </div>
+        
+    </div>
+    </div>
+</div>
+
+</body>
+</html>

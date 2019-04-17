@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- bootstrap-css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- //bootstrap-css -->
+    
+</head>
+<body>
+
+<div class="container">
+<div class="form-group form-inline"></div>
+<h2 style="text-align: center">กำหนดการขาย</h2>
+<br>
+    <div class="col-5" style="margin-left: 30%">
+        <div class="form-group form-inline">
+            <label class="col-4">รหัสสาขา</label>
+            <input class="form-control col-4" value="10110">
+            <label class="col-4">สีลม</label>
+        </div>
+        <div class="form-group form-inline">
+            <!-- <label class="col-4">ภาค</label>
+            <input class="form-control col-4" value="BE" readonly> -->
+            <label class="col-3">ภาค</label>
+            <label class="col-3">BE</label>
+        </div>
+        <div class="form-group form-inline">
+            <input type="submit" class="btn btn-primary mx-auto" value="แสดงการขาย">
+            <input type="button" class="btn btn-primary mx-auto" data-toggle="modal" data-target="#myModal" value="เพิ่มผู้ซื้อ">
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="col-10" style="margin-left: 10%">
+    <table class="table">
+    <thead>
+        <tr>
+        <th>รหัสผู้ซื้อ</th>
+        <th>ชื่อผู้ซื้อ</th>
+        <th>วันในสัปดาห์</th>
+        <th>วันที่มีผลเริ่มต้น</th>
+        <th>วันที่มีผลสิ้นสุด</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>111</td>
+        <td>บรรทุกทอง</td>
+        <td>อังคาร  พฤหัส  อาทิตย์</td>
+        <td>01/01/2562</td>
+        <td>01/12/2562</td>
+        </tr>
+        <tr>
+        <td>444</td>
+        <td>บรรทุกลม</td>
+        <td>จันทร์  ศุกร์</td>
+        <td>01/01/2562</td>
+        <td>01/12/2562</td>
+        </tr>
+    </tbody>
+    </table>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    
+        <!-- Modal Header -->
+        <div class="modal-header">
+        <h4 class="modal-title">เพิ่มผู้ซื้อ</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <!-- Modal body -->
+        <div class="modal-body">
+            <div class="form-group form-inline">
+                <label class="col-4">รหัสสาขา</label>
+                <input class="form-control col-4" value="10110" readonly>
+                <label class="col-4">สีลม</label>
+            </div>
+            <div class="form-group form-inline">
+                <label class="col-4">ภาค</label>
+                <input class="form-control col-4" value="BE" readonly>
+            </div>
+            <div class="form-group form-inline">
+                <label class="col-4">วันที่เริ่มต้น</label>
+                <input class="form-control col-4" value="01/03/2019">
+            </div>
+            <div class="form-group form-inline">
+                <label class="col-4">วันที่สิ้นสุด</label>
+                <input class="form-control col-4" value="31/12/2019">
+            </div>
+            <div class="form-group form-inline">
+                <label class="col-4">วันในสัปดาห์</label>
+            </div>
+            <div class="form-group form-inline">
+                <label class="col-1"></label>
+                <input type="checkbox" class="form-check-input" disabled>จันทร์
+                <label class="col-2"><input type="checkbox" class="form-check-input" disabled>อังคาร</label>
+                <label class="col-2"><input type="checkbox" class="form-check-input" disabled>พุธ</label>
+                <label class="col-2"><input type="checkbox" class="form-check-input" disabled>พฤหัส</label>
+            </div>
+            <div class="form-group form-inline">
+                <label class="col-1"></label>
+                <input type="checkbox" class="form-check-input" disabled>ศุกร์
+                <label class="col-2"><input type="checkbox" class="form-check-input" disabled>เสาร์</label>
+                <label class="col-2"><input type="checkbox" class="form-check-input" disabled>อาทิตย์</label>
+            </div>
+            
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+        <button type="button" class="btn btn-success mx-auto" data-dismiss="modal">บันทึก</button>
+        </div>
+        
+    </div>
+    </div>
+</div>
+
+</body>
+</html>
