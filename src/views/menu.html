@@ -5,39 +5,65 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/sidebar.css"
+    <link rel="stylesheet" href="../assets/css/sidebar.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+    <style>
+    .item {
+        float: right;
+        width: 8%;
+    }
+
+    /* Responsive columns */
+    /* @media screen and (max-width: 600px) {
+        .item {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+        }
+    } */
+    </style>
 </head>
 
 <body>
 
 <div class="container">
+    <!-- <div class="topbar">
+        <div class="item">
+            <img src="../assets/images/user.png" style="width: 50%;">
+        </div>
+    </div> -->
+
     <nav class="sidenav">
     <ul>
         <li>
-            <a href="#">
+            <a class="active" href="#">
                 <!-- <i class="fa fa-home fa-2x"></i> -->
                 <span class="nav-text">Home</span>
             </a>
         </li>
-        <li class="has-subnav">
+        <li>
             <a href="./modules/accouting/menuAccounting.html">
                 <!-- <i class="fa fa-laptop fa-2x"></i> -->
                 <span class="nav-text">Accounting</span>
             </a>
         </li>
-        <li class="has-subnav">
+        <li>
             <a href="./modules/department/menuDepartment.html">
                 <!-- <i class="fa fa-list fa-2x"></i> -->
                 <span class="nav-text">Department</span>
             </a>
         </li>
+        <li>
+            <a href="./modules/userAdmin/menuUser.html">
+                <!-- <i class="fa fa-list fa-2x"></i> -->
+                <span class="nav-text">User</span>
+            </a>
+        </li>
     </ul>
-
     <ul class="logout">
         <li>
             <a href="./login.html">
@@ -47,7 +73,10 @@
         </li>  
     </ul>
     </nav>
-    <div class="main"></div>
+
+    <div class="main">
+        
+    </div>
 </div>
 </body>
 </html>

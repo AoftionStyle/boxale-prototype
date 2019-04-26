@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Accounting</title>
+    <title>Department</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -10,7 +10,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
 </head>
 
 <body>
@@ -20,21 +19,21 @@
     <ul>
         <li>
             <a href="../../menu.html">
-                <span class="nav-text">Home</span>
+            <span class="nav-text">Home</span>
             </a>
         </li>
         <li>
-            <a class="active" href="#">
-                <span class="nav-text">Accounting</span>
+            <a href="../accouting/menuAccounting.html">
+            <span class="nav-text">Accounting</span>
             </a>
         </li>
         <li>
             <a href="../department/menuDepartment.html">
-                <span class="nav-text">Department</span>
+            <span class="nav-text">Department</span>
             </a>
         </li>
         <li>
-            <a href="../userAdmin/menuUser.html">
+            <a class="active" href="#">
             <span class="nav-text">User</span>
             </a>
         </li>
@@ -42,45 +41,37 @@
     <ul class="logout">
         <li>
             <a href="../../login.html">
-                <span class="nav-text">Logout</span>
+            <span class="nav-text">Logout</span>
             </a>
-        </li>  
+        </li>
     </ul>
     </nav>
     <div class="main">
         <div style="padding-top: 20px; text-align: center; margin-bottom: 5%">
-            <h2>Accouting Menu</h2>
+            <h2>Department Menu</h2>
         </div>
         <div class="row">
             <div class="column">
-                <a href="./saleCategory.html">
+                <a href="./userCreate.html">
                 <div class="card">
-                    <img src="../../../assets/images/category.png" class="img-center">
-                    <p>จัดการประเภทสินค้า</p>
+                    <img src="../../../assets/images/user.png" class="img-center">
+                    <p>สร้างผู้ใช้งาน</p>
                 </div>
                 </a>
             </div>
             <div class="column">
-                <a href="./saleContract.html">
+                <a href="./userGroupCreate.html">
                 <div class="card">
-                    <img src="../../../assets/images/contract.png" class="img-center">
-                    <p>กำหนดราคา Supplier</p>
+                    <img src="../../../assets/images/user-group.png" class="img-center">
+                    <p>สร้างกลุ่มผู้ใช้งาน</p>
                 </div>
                 </a>
             </div>
             <div class="column">
-                <a href="./saleView.html">
+                <a href="./userGroupMagnagement.html">
                 <div class="card">
-                    <img src="../../../assets/images/list.png" class="img-center">
-                    <p>รายการขาย</p>
-                </div>
-                </a>
-            </div>
-            <div class="column">
-                <a href="./saleReport.html">
-                <div class="card">
-                    <img src="../../../assets/images/excel.png" class="img-center">
-                    <p>รายงานการขาย</p>
+                    <img src="../../../assets/images/user-management.png" class="img-center">
+                    <p>จัดการกลุ่มผู้ใช้งาน</p>
                 </div>
                 </a>
             </div>
